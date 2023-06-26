@@ -22,11 +22,16 @@
 <body>
     <header class="nav-bar">
         <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
+            <div class="menu">
+                <a class="nav-logo" href="/">
                     <img src="./static/img/logo.svg" />
+                </a>
+                <div class="menu-container">
+                    <a class="nav-button" href="{{ url_for('maya') }}">Maya</a>
+                    <a class="nav-button" href="{{ url_for('dilnaz') }}">Dilnaz</a>
+                    <a class="nav-button" href="{{ url_for('hobbies') }}">Hobbies</a>
                 </div>
-            </a>
+            </div>
         </div>
     </header>
 

@@ -34,19 +34,36 @@ body {
 .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .nav-logo img {
     width: 200px;
 }
 
+.nav-button {
+    padding: 10px;
+}
+
+.nav-button a {
+    font-size: 20px;
+    font-weight: 400;
+    color: white !important;
+    text-decoration: none;
+}
+
 .nav-content nav {
-    display: block;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
     width: 100%;
     text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+    padding: 30px 10%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
 }
 
 .profile {
@@ -57,19 +74,19 @@ body {
 }
 
 .profile h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    padding: 20px;
 }
 
 .profile .profile-picture {
@@ -122,17 +139,17 @@ body {
     align-items: flex-start;
   }
   
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
+.card {
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 10px;
+margin: 10px;
+width: 200px;
+text-align: center;
+}
+
+.card img {
+width: 100%;
+height: auto;
+margin-bottom: 10px;
+}

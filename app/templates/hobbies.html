@@ -32,11 +32,14 @@
 
     <div class="hobbies">
         <h1>{{ title }}</h1>
-        <ul class="hobbies-list">
+        <div class="card-container">
             {% for hobby in hobbies_list %}
-            <li>{{ hobby }}</li>
+            <div class="card">
+                <img src="{{ hobby.image }}" alt="{{ hobby.title }}" />
+                <h2>{{ hobby.title }}</h2>
+            </div>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 </body>
 </html>

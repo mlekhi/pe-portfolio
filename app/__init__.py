@@ -1,10 +1,7 @@
 import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
-<<<<<<< HEAD
 from app.text import about_text, work_text
-=======
->>>>>>> 4888678 (Remove unused requirement, try to make marker bigger)
 
 load_dotenv()
 app = Flask(__name__)

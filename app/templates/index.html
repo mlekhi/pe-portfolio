@@ -17,21 +17,63 @@
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
+
+    <style>
+        /* Add custom CSS for the navigation bar */
+        .nav-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            font-size: 18px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #aaa;
+        }
+    </style>
 </head>
 
 <body>
     <header class="nav-bar">
         <div class="nav-content">
-            <div class="menu">
-                <a class="nav-logo" href="/">
+            <a href="/">
+                <div class="nav-logo">
                     <img src="./static/img/logo.svg" />
-                </a>
-                <div class="menu-container">
-                    <a class="nav-button" href="{{ url_for('maya') }}">Maya</a>
-                    <a class="nav-button" href="{{ url_for('dilnaz') }}">Dilnaz</a>
-                    <a class="nav-button" href="{{ url_for('hobbies') }}">Hobbies</a>
                 </div>
-            </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#">Dilnaz</a></li>
+                <li><a href="#">Maya</a></li>
+                <li><a href="#">Joseph</a></li>
+            </ul>
         </div>
     </header>
 

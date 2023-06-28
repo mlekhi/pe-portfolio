@@ -5,6 +5,7 @@ Flask==2.0.1
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
+overpy==0.6
 peewee==3.14.10
 pycparser==2.21
 PyMySQL==1.0.2

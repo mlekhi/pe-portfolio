@@ -18,6 +18,12 @@ body {
   margin: 0px;
 }
 
+#map {
+  width: 80%;
+  height: 800px;
+  margin: auto;
+}
+
 .nav-bar {
   width: 100%;
   display: inline-block;

@@ -1,7 +1,10 @@
 import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
+<<<<<<< HEAD
 from app.text import about_text, work_text
+=======
+>>>>>>> 4888678 (Remove unused requirement, try to make marker bigger)
 
 load_dotenv()
 app = Flask(__name__)
@@ -12,9 +15,12 @@ def index():
     coords = [(34.037945, -117.677852), (45.231382, 16.577320), (45.537137, 119.137498)]
     markers = ""
 
-    for idd, (lat, lon) in enumerate(coords):
+    for id, (lat, lon) in enumerate(coords):
         # Create the marker and its pop-up for each shop
+        idd = f"a{id}"
+        print(idd)
         markers += "var {idd} = L.marker([{latitude}, {longitude}]);\
+                    {idd}.options.iconSize = [100, 100];\
                     {idd}.addTo(map).bindPopup('{latitude}<br>{longitude}');".format(
             idd=idd,
             latitude=lat,

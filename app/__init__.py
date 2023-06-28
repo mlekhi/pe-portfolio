@@ -9,8 +9,25 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    coords = [(34.037945, -117.677852), (45.231382, 16.577320), (45.537137, 119.137498)]
+    markers = ""
+
+    for id, (lat, lon) in enumerate(coords):
+        # Create the marker and its pop-up for each shop
+        idd = f"a{id}"
+        markers += "var {idd} = L.marker([{latitude}, {longitude}]);\
+                    {idd}.addTo(map);".format(
+            idd=idd,
+            latitude=lat,
+            longitude=lon,
+        )
+
+    # Render the page with the map
     return render_template(
         "index.html",
+        markers=markers,
+        lat=coords[0][0],
+        lon=coords[0][1],
         title="MLH Fellow",
         url=os.getenv("URL"),
         photo="logo",

@@ -18,10 +18,8 @@ def index():
     for id, (lat, lon) in enumerate(coords):
         # Create the marker and its pop-up for each shop
         idd = f"a{id}"
-        print(idd)
         markers += "var {idd} = L.marker([{latitude}, {longitude}]);\
-                    {idd}.options.iconSize = [100, 100];\
-                    {idd}.addTo(map).bindPopup('{latitude}<br>{longitude}');".format(
+                    {idd}.addTo(map);".format(
             idd=idd,
             latitude=lat,
             longitude=lon,

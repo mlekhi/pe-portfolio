@@ -99,10 +99,10 @@ def dilnaz():
 def hobbies():
     title = "Our Team's Hobbies"
     hobbies_list = [
-        {"title": "Reading", "image": "reading.jpeg"},
-        {"title": "Gardening", "image": "gardening.jpeg"},
-        {"title": "Painting", "image": "painting.jpeg"},
-        {"title": "Cooking", "image": "cooking.jpeg"},
+        {"title": "Reading", "image": "static/img/reading.jpg"},
+        {"title": "Gardening", "image": "static/img/gardening.jpg"},
+        {"title": "Painting", "image": "static/img/painting.jpg"},
+        {"title": "Cooking", "image": "static/img/cooking.jpg"},
     ]
 
     return render_template("hobbies.html", title=title, hobbies_list=hobbies_list)

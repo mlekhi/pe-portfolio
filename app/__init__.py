@@ -13,4 +13,12 @@ def index():
 
 @app.route("/hobbies")
 def hobbies():
-    return render_template("hobbies.html", title="MLH Fellow", url=os.getenv("URL"))
+    title = "Our Team's Hobbies"
+    hobbies_list = [
+        {"title": "Reading", "image": "static/img/reading.jpg"},
+        {"title": "Gardening", "image": "static/img/gardening.jpg"},
+        {"title": "Painting", "image": "static/img/painting.jpg"},
+        {"title": "Cooking", "image": "static/img/cooking.jpg"},
+    ]
+
+    return render_template("hobbies.html", title=title, hobbies_list=hobbies_list)

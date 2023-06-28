@@ -35,17 +35,65 @@
     <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
     <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
     <title>{{ title }}</title>
+
+    <style>
+        /* Add custom CSS for the navigation bar */
+        .nav-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            font-size: 18px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #aaa;
+        }
+    </style>
   </head>
 
   <body>
     <header class="nav-bar">
-      <div class="nav-content">
-        <a href="/">
-          <div class="nav-logo">
-            <img src="./static/img/logo.svg" />
-          </div>
-        </a>
-      </div>
+        <div class="nav-content">
+            <a href="/">
+                <div class="nav-logo">
+                    <img src="./static/img/logo.svg" />
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/dilnaz">Dilnaz</a></li>
+                <li><a href="/maya">Maya</a></li>
+                <li><a href="/joseph">Joseph</a></li>
+                <li><a href="/hobbies">Team Hobbies</a></li>
+            </ul>
+        </div>
     </header>
 
     <div class="profile">

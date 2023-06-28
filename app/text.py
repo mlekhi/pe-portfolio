@@ -20,6 +20,14 @@ about_text = [
     "Overall, the MLH Fellowship provides an immersive and comprehensive experience that empowers aspiring technologists to develop their skills, work on real-world projects, and accelerate their careers in the tech industry. It serves as a launching pad for the next generation of innovators and problem solvers.",
 ]
 
+work_text = [
+    "We are great team!"
+]
+
+education_text = [
+    "MLH"
+]
+
 work_text_joseph = [
     "",
     "1. Project: Sentiment Analysis for Social Media Monitoring",
@@ -43,6 +51,10 @@ work_text_joseph = [
     "Description: Played a key role in developing a personalized recommendation engine for MLH's e-commerce platform. Leveraged collaborative filtering and content-based filtering techniques to analyze user behavior and preferences. Integrated the recommendation engine with MLH's existing product catalog, enabling personalized product recommendations to enhance user experience and increase customer engagement.",
 ]
 
+education_text_joseph = [
+    "Berkeley University"
+]
+
 work_text_dilnaz = [
     "",
     "1. Project: Aziz ",
@@ -63,13 +75,25 @@ about_text_dilnaz = [
     "Rising Sophomore at Minerva university. Result-oriented software developer with an experience in mobile game dev on Unity, Python Industrial programming through Yandex Lyceum courses, and electrical engineering through personal projects and competitions. I seek to work as a software engineer to further my knowledge, implement innovative solutions and manage complex tasks."
 ]
 
-work_text = [
-    "We are great team!"
+education_text_dilnaz = [
+    "CS at Minerva University"
 ]
 
 work_text_maya = [
-
+    "",
+    "Technology Operations Intern @ TD Bank",
+    "",
+    "Leveraged Confiform, JSON, HTML to create an automated Confluence & Jira hub to facilitate quantifying the impact of TD’s Agile @Scale practice, streamlining internal operations for 700 practitioners.",
+    "",
+    "Front-End UI/UX Developer @ NextGen EduCare",
+    "",
+    "Crafted intuitive and user-friendly mobile app interfaces using HTML and CSS incorporating emerging design trends from social media platforms. Wireframed ~20 frames for app prototype to be presented to potential investors.",
+    ""
 ]
 about_text_maya = [
+    "Rising Sophomore at Western University studying Business Administration and Computer Science. Innovative software developer with a passion for creation and experience in fullstack & mobile development."
+]
 
+education_text_maya = [
+    "CS/HBA at Western University"
 ]

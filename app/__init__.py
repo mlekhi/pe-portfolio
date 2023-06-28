@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from app.text import about_text, work_text_joseph, work_text_dilnaz, about_text_dilnaz, work_text, about_text_maya, \
-    work_text_maya
+    work_text_maya, education_text, education_text_dilnaz, education_text_joseph, education_text_maya
 
 load_dotenv()
 app = Flask(__name__)
@@ -37,7 +37,8 @@ def index():
         url=os.getenv("URL"),
         photo="logo",
         about_text=about_text,
-        work_text=work_text
+        work_text=work_text,
+        education_text=education_text
     )
 
 
@@ -56,12 +57,13 @@ def joseph():
         photo="logo",
         about_text=about_text,
         work_text=work_text_joseph,
+        education_text=education_text_joseph
     )
 
 
 @app.route("/maya")
 def maya():
-    coords = [(34.037945, -117.677852), (45.231382, 16.577320), (45.537137, 119.137498)]
+    coords = [(19.43260, -99.133209), (39.9526, -75.1652), (6.3690, 34.8888), (52.3676,4.9041)]
 
     # Render the page with the map
     return render_template(
@@ -74,6 +76,7 @@ def maya():
         photo="profile",
         about_text=about_text_maya,
         work_text=work_text_maya,
+        education_text=education_text_maya
     )
 
 
@@ -92,6 +95,7 @@ def dilnaz():
         photo="dilnaz",
         about_text=about_text_dilnaz,
         work_text=work_text_dilnaz,
+        education_text=education_text_dilnaz
     )
 
 

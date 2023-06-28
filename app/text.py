@@ -76,7 +76,7 @@ about_text_dilnaz = [
 ]
 
 education_text_dilnaz = [
-    "CS at Minerva University"
+    "Computer Science and Artificial Intelligence at Minerva University"
 ]
 
 work_text_maya = [

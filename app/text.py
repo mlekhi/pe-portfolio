@@ -57,7 +57,7 @@ education_text_joseph = [
 
 work_text_dilnaz = [
     "",
-    "1. Project: Aziz This is text change",
+    "1. Project: Aziz This is the second text change",
     "",
     "Description: Build a compact sensor device via Arduino to aid rescue teams in their search for disaster victims that integrates various metrics to assess signs of human life from beneath rubble, allowing rescue workers to find victims trapped underground. Integrated IR, microwave, and ultrasound sensors to increase the accuracy of the output. Engineered a 3D model of a spherical skeleton via Autodesk Maya with adjustable edges to increase the motion in the rubble.",
     "",

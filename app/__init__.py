@@ -168,5 +168,17 @@ def delete_timeline_post():
     else:
         abort(404)
 
+
+@app.route('/timeline', methods=["GET", "POST"])
+def timeline():
+    if request.method == "POST":
+        name = request.form['name']
+        email = request.form['email']
+        content = request.form['content']
+        timeline_post = TimelinePost.create(name=name, email=email, content=content)
+
+    timeline_posts = TimelinePost.select().order_by(TimelinePost.created_at.desc())
+    return render_template('timeline.html', title="Timeline", timeline_posts=timeline_posts)
+
 if __name__ == "__main__":
     app.run()

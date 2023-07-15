@@ -4,7 +4,7 @@
 CONTENT=$(openssl rand -base64 10)
 URL="http://127.0.0.1:5000/api/timeline_post"
 
-
+# Function that creates the timeline post and outputs it
 create_timeline_post() {
   echo "Creating timeline post..."
   RESPONSE=$(curl -X POST -d "name=TestUser&email=test@example.com&content=$CONTENT" "$URL")
@@ -14,6 +14,7 @@ create_timeline_post() {
   echo "Timeline post created."
 }
 
+# Function that checks if the post was created using the content_check
 check_timeline_post() {
   echo "Checking timeline post..."
   sleep 1
@@ -25,12 +26,14 @@ check_timeline_post() {
   fi
 }
 
+# Function that deletes the timeline_post
 delete_timeline_post() {
   echo "Deleting timeline post..."
   curl -X DELETE "$URL"
   echo "Timeline post deleted."
 }
 
+# Main script that will accept the parameter and call the functions
 if [ "$1" == "create" ]; then
   create_timeline_post
   check_timeline_post

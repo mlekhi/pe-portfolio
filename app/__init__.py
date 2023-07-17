@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 from app.text import about_text, work_text_joseph, work_text_dilnaz, about_text_dilnaz, work_text, about_text_maya, \
     work_text_maya, education_text, education_text_dilnaz, education_text_joseph, education_text_maya
 
-load_dotenv()
+load_dotenv('./environment.env')
 app = Flask(__name__)
 
-mydb = MySQLDatabase("myportfoliodb", host="127.0.0.1", port=3306, user="root", password="Mayalekhi7")
+mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"), user=os.getenv("MYSQL_USER"), password=os.getenv("MYSQL_PASSWORD"), host=os.getenv("MYSQL_HOST"), port=3306)
 
 print(mydb)
 

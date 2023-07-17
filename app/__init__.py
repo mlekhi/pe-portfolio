@@ -12,7 +12,7 @@ from app.text import about_text, work_text_joseph, work_text_dilnaz, about_text_
 load_dotenv()
 app = Flask(__name__)
 
-mydb = MySQLDatabase("myportfoliodb", host="localhost", port=3306, user="root", password="Mayalekhi7")
+mydb = MySQLDatabase("myportfoliodb", host="127.0.0.1", port=3306, user="root", password="Mayalekhi7")
 
 print(mydb)
 

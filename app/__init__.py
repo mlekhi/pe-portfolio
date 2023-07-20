@@ -91,7 +91,7 @@ def maya():
         markers=mapping(coords)[1],
         lat=(mapping(coords))[0][0][0],
         lon=(mapping(coords))[0][0][1],
-        title="Maya Lekhi",
+        title="MAYA LEKHI",
         url=os.getenv("URL"),
         photo="profile",
         about_text=about_text_maya,

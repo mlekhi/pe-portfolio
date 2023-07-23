@@ -6,8 +6,7 @@ import datetime
 
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
-from app.text import about_text, work_text_joseph, work_text_dilnaz, about_text_dilnaz, work_text, about_text_maya, \
-    work_text_maya, education_text, education_text_dilnaz, education_text_joseph, education_text_maya
+from app.text import about_text, work_text, about_text_maya, work_text_maya, education_text, education_text_maya
 
 load_dotenv('./environment.env')
 app = Flask(__name__)
@@ -53,7 +52,7 @@ def index():
         markers=mapping(coords)[1],
         lat=(mapping(coords))[0][0][0],
         lon=(mapping(coords))[0][0][1],
-        title="MAYA LEKHI",
+        title="Maya Lekhi",
         url=os.getenv("URL"),
         photo="profile",
         about_text=about_text_maya,
@@ -73,10 +72,6 @@ def hobbies():
 
     return render_template("hobbies.html", title=title, hobbies_list=hobbies_list)
 
-
-if __name__ == "__main__":
-    app.run()
-
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
     name = request.form['name']
@@ -94,3 +89,10 @@ def get_time_line_post():
             for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
+
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="Timeline")
+
+if __name__ == "__main__":
+    app.run()

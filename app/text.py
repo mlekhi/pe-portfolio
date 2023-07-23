@@ -28,57 +28,6 @@ education_text = [
     "MLH"
 ]
 
-work_text_joseph = [
-    "",
-    "1. Project: Sentiment Analysis for Social Media Monitoring",
-    "",
-    "Description: Developed a machine learning model to analyze sentiment in real-time social media data. Implemented natural language processing techniques and deep learning algorithms to classify posts and comments as positive, negative, or neutral. Integrated the model into MLH's social media monitoring platform, providing valuable insights for brand reputation management and customer sentiment analysis.",
-    "",
-    "2. Project: Fraud Detection System for Financial Institutions",
-    "",
-    "Description: Led a team in developing a fraud detection system for MLH's banking clients. Designed and implemented a machine learning pipeline that utilized anomaly detection algorithms and supervised learning techniques to identify and prevent fraudulent activities in real-time. Collaborated with data engineers and security experts to integrate the system seamlessly into existing banking infrastructure, significantly reducing financial losses due to fraudulent transactions.",
-    "",
-    "3. Project: Autonomous Vehicle Navigation System",
-    "",
-    "Description: Worked as part of a cross-functional team to develop an advanced autonomous vehicle navigation system. Utilized deep learning algorithms and computer vision techniques to process real-time sensor data from cameras, lidar, and radar. Built a robust perception module that allowed the vehicle to accurately detect and track objects, make informed decisions, and navigate complex traffic scenarios. Contributed to the development and testing of the system in simulated and real-world environments.",
-    "",
-    "4. Project: Medical Image Analysis for Disease Diagnosis",
-    "",
-    "Description: Collaborated with medical researchers and doctors to develop a machine learning solution for medical image analysis. Built a deep learning model that could accurately detect and classify abnormalities in medical images, such as X-rays and MRI scans. Implemented state-of-the-art image segmentation techniques to assist in the diagnosis of diseases and conditions, providing healthcare professionals with valuable insights and improving patient care.",
-    "",
-    "5. Project: Personalized Recommendation Engine",
-    "",
-    "Description: Played a key role in developing a personalized recommendation engine for MLH's e-commerce platform. Leveraged collaborative filtering and content-based filtering techniques to analyze user behavior and preferences. Integrated the recommendation engine with MLH's existing product catalog, enabling personalized product recommendations to enhance user experience and increase customer engagement.",
-]
-
-education_text_joseph = [
-    "Berkeley University"
-]
-
-work_text_dilnaz = [
-    "",
-    "1. Project: Aziz ",
-    "",
-    "Description: Build a compact sensor device via Arduino to aid rescue teams in their search for disaster victims that integrates various metrics to assess signs of human life from beneath rubble, allowing rescue workers to find victims trapped underground. Integrated IR, microwave, and ultrasound sensors to increase the accuracy of the output. Engineered a 3D model of a spherical skeleton via Autodesk Maya with adjustable edges to increase the motion in the rubble.",
-    "",
-    "2. Project: PulseBud",
-    "",
-    "Description: Programmed a real-time seizure prediction system for smartwatches powered by machine learning that provides an emergency notification system and instant access to critical medical records for healthcare workers.  Received a $3,000 monetary grant from InterSystems and Zepp Health Corp sponsorship.  Won I Place on CalHacks Hackathon by UC Berkeley.",
-    "",
-    "3. Project: AstroTravel",
-    "",
-    "Description: Developed a mobile app with a 3D model of the Solar System that predicts the planetary positions over time on Unity Engine & Vuforia for AR integration. Programmed rocket's flight trajectory prediction on the PyQt5 using Matplotlib to model efficient combination of motors, form, and launch positions through GFS (Global Forecast System).",
-    ""
-]
-
-about_text_dilnaz = [
-    "Rising Sophomore at Minerva university. Result-oriented software developer with an experience in mobile game dev on Unity, Python Industrial programming through Yandex Lyceum courses, and electrical engineering through personal projects and competitions. I seek to work as a software engineer to further my knowledge, implement innovative solutions and manage complex tasks."
-]
-
-education_text_dilnaz = [
-    "Computer Science and Artificial Intelligence at Minerva University"
-]
-
 work_text_maya = [
     "",
     "Technology Operations Intern @ TD Bank",

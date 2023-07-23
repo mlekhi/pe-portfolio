@@ -1,0 +1,14 @@
+<form action="/api/timeline_post" method="post">
+    <h1>Create a Timeline Post</h1>
+    Name <input type="text" name="name" /><br />
+    Email <input type="text" name="name" /><br />
+    Content <input type="text" name="name" /><br />
+    <input type="submit" value="Submit">
+
+    <h1>Displaying Timeline Posts</h1>
+    {% for post in sorted_posts %}
+    <h3>{{post['name']}}</h3>
+    <p>{{post['email']}}</p>
+    <p>{{post['content']}}</p>
+    {% endfor %}
+</form>

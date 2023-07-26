@@ -37,5 +37,16 @@ class TestTimelinePost(unittest.TestCase):
         
         # TODO: Get timelineposts and assert that they are correct
         def get_timeline_posts(self):
+                expected_posts = [
+                        {
+                                'name': 'John Doe',
+                                'email': 'john@example.com',
+                                'content': "Hello world, I'm John!"
+                        },
+                        {
+                                'name': 'Jane Doe',
+                                'email': 'jane@example.com',
+                                'content': "Hello world, I'm Jane!"
+                        }]
                 timeline_posts = TimelinePost.select()
-                assert timeline_posts
+                assert timeline_posts == expected_posts

@@ -22,9 +22,10 @@ class AppTestCase(unittest.TestCase):
                 assert response.status_code == 200
                 assert response.is_json
                 json = response.get_json()
+                
+                print(json)  # Add this debugging statement
                 assert "timeline_posts" in json
                 assert len(json["timeline_posts"]) == 0
 
-                print(json)  # Add this debugging statement
                 # TODO Add more tests relating to the /api/timeline_post GET and POST apis 
                 # TODO Add more tests relating to the timeline page

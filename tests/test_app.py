@@ -14,7 +14,7 @@ class AppTestCase(unittest.TestCase):
                 response = self.client.get("/")
                 assert response.status_code == 200
                 html = response.get_data(as_text=True)
-                assert "<title>MLH Fellow</title>" in html
+                assert "<title>Maya Lekhi</title>" in html
                 # TODO Add more tests relating to the home page
         
         def test_timeline(self):

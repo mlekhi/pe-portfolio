@@ -11,7 +11,7 @@ class AppTestCase(unittest.TestCase):
                 self.client = app.test_client()
 
         def test_home(self):
-                response self.client.get("/")
+                response = self.client.get("/")
                 assert response.status_code == 200
                 html = response.get_data(as_text=True)
                 assert "<title>MLH Fellow</title>" in html

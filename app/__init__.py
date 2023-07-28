@@ -98,6 +98,8 @@ def post_time_line_post():
 
     try:
         content = request.form["content"]
+        if not content:
+            return jsonify({"error": "Invalid content"}), 400
     except:
         return jsonify({"error": "Invalid content"}), 400
 

@@ -38,7 +38,7 @@ class AppTestCase(unittest.TestCase):
                         'email': 'john@example.com',
                         'content': "Hello world, I'm John!"}
                 response = self.client.post("/api/timeline_post", json=data)
-                print("Response Data:" + response.json)
+                print("Response Data:", response.json)
                 assert response.status_code == 201
 
         # TODO Add more tests relating to the timeline page

@@ -25,6 +25,7 @@ class AppTestCase(unittest.TestCase):
                 assert response.is_json
                 json = response.get_json()
 
+                print(json)
                 assert "timeline_post" in json
                 assert len(json["timeline_post"]) == 0
   

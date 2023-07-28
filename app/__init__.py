@@ -82,12 +82,27 @@ def hobbies():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
+    try:
+        name = request.form["name"]
+    except:
+        return jsonify({"error": "Invalid name"}), 400
+
+    try:
+        email = request.form["email"]
+    except:
+        return jsonify({"error": "Invalid email"}), 400
+
+    try:
+        content = request.form["content"]
+    except:
+        return jsonify({"error": "Invalid content"}), 400
+
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
 
-    return model_to_dict(timeline_post)
+    if timeline_post:
+        return model_to_dict(timeline_post)
+    else:
+        return jsonify({'error': 'Failed to create timeline post'}), 400
 
 @app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
@@ -100,7 +115,8 @@ def get_time_line_post():
 
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html', title="Timeline")
+    timeline_post = get_time_line_post()
+    return render_template('timeline.html', title="Timeline", timeline_post=timeline_post)
 
 if __name__ == "__main__":
     app.run()

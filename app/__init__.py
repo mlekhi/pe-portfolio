@@ -4,7 +4,7 @@ from peewee import *
 from playhouse.shortcuts import model_to_dict
 import datetime
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 from app.text import about_text, work_text, about_text_maya, work_text_maya, education_text, education_text_maya
 

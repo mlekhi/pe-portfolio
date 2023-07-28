@@ -34,9 +34,7 @@ class AppTestCase(unittest.TestCase):
                 assert response.status_code == 200
 
         def test_post(self):
-                data = {'name': 'John Doe',
-                        'email': 'john@example.com',
-                        'content': "Hello world, I'm John!"}
+                data = {"name": "John Doe", "email": "john@example.com", "content": "Hello World"}
                 response = self.client.post("/api/timeline_post", json=data)
                 print("Response Data:", response.json)
                 assert response.status_code == 201

@@ -1,4 +1,5 @@
 import os
+import re
 
 from peewee import *
 from playhouse.shortcuts import model_to_dict
@@ -87,8 +88,11 @@ def post_time_line_post():
     except:
         return jsonify({"error": "Invalid name"}), 400
 
+    emailPattern = r"[^@]+@[^@]+\.[^@]+"
     try:
         email = request.form["email"]
+        if not re.match(emailPattern, email):
+            return jsonify({"error": "Invalid email format"}), 400
     except:
         return jsonify({"error": "Invalid email"}), 400
 

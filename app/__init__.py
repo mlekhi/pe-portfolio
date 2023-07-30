@@ -20,7 +20,7 @@ from app.text import (
     education_text_maya,
 )
 
-load_dotenv()
+load_dotenv("./example.env")
 app = Flask(__name__)
 
 

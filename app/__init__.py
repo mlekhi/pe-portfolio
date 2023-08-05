@@ -8,16 +8,11 @@ from flask import jsonify, abort, Response
 import re
 from app.text import (
     about_text,
-    work_text_joseph,
     work_text_dilnaz,
     about_text_dilnaz,
     work_text,
-    about_text_maya,
-    work_text_maya,
     education_text,
-    education_text_dilnaz,
-    education_text_joseph,
-    education_text_maya,
+    education_text_dilnaz
 )
 
 load_dotenv("./example.env")
@@ -90,49 +85,6 @@ def index():
         about_text=about_text,
         work_text=work_text,
         education_text=education_text,
-    )
-
-
-@app.route("/joseph")
-def joseph():
-    coords = [(34.037945, -117.677852), (45.231382, 16.577320), (45.537137, 119.137498)]
-
-    # Render the page with the map
-    return render_template(
-        "index.html",
-        markers=mapping(coords)[1],
-        lat=(mapping(coords))[0][0][0],
-        lon=(mapping(coords))[0][0][1],
-        title="Joseph",
-        url=os.getenv("URL"),
-        photo="logo",
-        about_text=about_text,
-        work_text=work_text_joseph,
-        education_text=education_text_joseph,
-    )
-
-
-@app.route("/maya")
-def maya():
-    coords = [
-        (19.43260, -99.133209),
-        (39.9526, -75.1652),
-        (6.3690, 34.8888),
-        (52.3676, 4.9041),
-    ]
-
-    # Render the page with the map
-    return render_template(
-        "index.html",
-        markers=mapping(coords)[1],
-        lat=(mapping(coords))[0][0][0],
-        lon=(mapping(coords))[0][0][1],
-        title="Maya Lekhi",
-        url=os.getenv("URL"),
-        photo="profile",
-        about_text=about_text_maya,
-        work_text=work_text_maya,
-        education_text=education_text_maya,
     )
 
 

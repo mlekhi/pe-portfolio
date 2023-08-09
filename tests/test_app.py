@@ -17,17 +17,7 @@ class AppTestCase(unittest.TestCase):
                 assert "<title>Maya Lekhi</title>" in html
                 # TODO Add more tests relating to the home page
                 assert "<img" in html
-                
-        
-        def test_timeline(self):
-                response = self.client.get("/api/timeline_post")
-                assert response.status_code == 200
-                assert response.is_json
-                json = response.get_json()
-
-                assert "timeline_post" in json
-                assert len(json["timeline_post"]) == 0
-  
+                  
         # TODO Add more tests relating to the /api/timeline_post GET and POST apis 
         def test_get(self):
                 response = self.client.get("/api/timeline_post")

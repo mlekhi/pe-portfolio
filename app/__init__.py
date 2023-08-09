@@ -64,33 +64,6 @@ def mapping(coords):
 @app.route("/")
 def index():
     coords = [
-        (34.037945, -117.677852),
-        (45.231382, 16.577320),
-        (45.537137, 119.137498),
-        (48.0196, 66.9237),
-        (61.5240, 105.3188),
-        (41.3775, 64.5853),
-        (38.9637, 35.2433),
-        (37.0902, -95.7129),
-    ]
-    # Render the page with the map
-    return render_template(
-        "index.html",
-        markers=mapping(coords)[1],
-        lat=(mapping(coords))[0][0][0],
-        lon=(mapping(coords))[0][0][1],
-        title="MLH Fellow",
-        url=os.getenv("URL"),
-        photo="logo",
-        about_text=about_text,
-        work_text=work_text,
-        education_text=education_text,
-    )
-
-
-@app.route("/dilnaz")
-def dilnaz():
-    coords = [
         (48.0196, 66.9237),
         (61.5240, 105.3188),
         (41.3775, 64.5853),

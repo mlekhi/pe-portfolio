@@ -28,33 +28,6 @@ education_text = [
     "MLH"
 ]
 
-work_text_joseph = [
-    "",
-    "1. Project: Sentiment Analysis for Social Media Monitoring",
-    "",
-    "Description: Developed a machine learning model to analyze sentiment in real-time social media data. Implemented natural language processing techniques and deep learning algorithms to classify posts and comments as positive, negative, or neutral. Integrated the model into MLH's social media monitoring platform, providing valuable insights for brand reputation management and customer sentiment analysis.",
-    "",
-    "2. Project: Fraud Detection System for Financial Institutions",
-    "",
-    "Description: Led a team in developing a fraud detection system for MLH's banking clients. Designed and implemented a machine learning pipeline that utilized anomaly detection algorithms and supervised learning techniques to identify and prevent fraudulent activities in real-time. Collaborated with data engineers and security experts to integrate the system seamlessly into existing banking infrastructure, significantly reducing financial losses due to fraudulent transactions.",
-    "",
-    "3. Project: Autonomous Vehicle Navigation System",
-    "",
-    "Description: Worked as part of a cross-functional team to develop an advanced autonomous vehicle navigation system. Utilized deep learning algorithms and computer vision techniques to process real-time sensor data from cameras, lidar, and radar. Built a robust perception module that allowed the vehicle to accurately detect and track objects, make informed decisions, and navigate complex traffic scenarios. Contributed to the development and testing of the system in simulated and real-world environments.",
-    "",
-    "4. Project: Medical Image Analysis for Disease Diagnosis",
-    "",
-    "Description: Collaborated with medical researchers and doctors to develop a machine learning solution for medical image analysis. Built a deep learning model that could accurately detect and classify abnormalities in medical images, such as X-rays and MRI scans. Implemented state-of-the-art image segmentation techniques to assist in the diagnosis of diseases and conditions, providing healthcare professionals with valuable insights and improving patient care.",
-    "",
-    "5. Project: Personalized Recommendation Engine",
-    "",
-    "Description: Played a key role in developing a personalized recommendation engine for MLH's e-commerce platform. Leveraged collaborative filtering and content-based filtering techniques to analyze user behavior and preferences. Integrated the recommendation engine with MLH's existing product catalog, enabling personalized product recommendations to enhance user experience and increase customer engagement.",
-]
-
-education_text_joseph = [
-    "Berkeley University"
-]
-
 work_text_dilnaz = [
     "",
     "1. Project: Aziz",
@@ -77,23 +50,4 @@ about_text_dilnaz = [
 
 education_text_dilnaz = [
     "Computer Science and Artificial Intelligence at Minerva University"
-]
-
-work_text_maya = [
-    "",
-    "Technology Operations Intern @ TD Bank",
-    "",
-    "Leveraged Confiform, JSON, HTML to create an automated Confluence & Jira hub to facilitate quantifying the impact of TD’s Agile @Scale practice, streamlining internal operations for 700 practitioners.",
-    "",
-    "Front-End UI/UX Developer @ NextGen EduCare",
-    "",
-    "Crafted intuitive and user-friendly mobile app interfaces using HTML and CSS incorporating emerging design trends from social media platforms. Wireframed ~20 frames for app prototype to be presented to potential investors.",
-    ""
-]
-about_text_maya = [
-    "Rising Sophomore at Western University studying Business Administration and Computer Science. Innovative software developer with a passion for creation and experience in fullstack & mobile development."
-]
-
-education_text_maya = [
-    "CS/HBA at Western University"
 ]

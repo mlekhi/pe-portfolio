@@ -35,6 +35,19 @@
     <title>{{ title }}</title>
 </head>
 
+<header class="nav-bar">
+  <div class="nav-content">
+      <a href="/">
+          <div class="nav-logo">
+              <img src="./static/img/logo.svg" />
+          </div>
+      </a>
+      <ul class="nav-menu">
+          <li><a href="/hobbies">My Hobbies</a></li>
+      </ul>
+  </div>
+</header>
+
 <form action="/api/timeline_post" method="post">
   <h1>Create a Timeline Post</h1>
   Name <input type="text" name="name" /><br />

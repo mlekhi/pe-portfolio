@@ -30,4 +30,6 @@ jobs:
       - name: Print project root directory
         run: ssh my-vps 'cd ${{ secrets.PROJECT_ROOT}} && pwd'
       - name: Deploy site
-        run: ssh my-vps '~/pe-portfolio/redeploy-site3.sh'
+        run: |
+          ssh my-vps 'chmod +x ~/pe-portfolio/redeploy-site3.sh'
+          ssh my-vps '~/pe-portfolio/redeploy-site3.sh'

@@ -33,3 +33,4 @@ jobs:
         run: |
           ssh my-vps 'chmod +x ~/pe-portfolio/redeploy-site3.sh'
           ssh my-vps '~/pe-portfolio/redeploy-site3.sh'
+          curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"

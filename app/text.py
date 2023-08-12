@@ -40,7 +40,7 @@ work_text_maya = [
     ""
 ]
 about_text_maya = [
-    "Rising Sophomore at Western University studying Business Administration and Computer Science. Innovative software developer with a passion for creation and experience in fullstack & mobile development."
+    "Sophomore at Western University studying Business Administration and Computer Science. Innovative software developer with a passion for creation and experience in fullstack & mobile development."
 ]
 
 education_text_maya = [

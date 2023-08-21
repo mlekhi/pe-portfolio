@@ -190,3 +190,22 @@ body {
   height: auto;
   margin-bottom: 10px;
 }
+
+.horizontal-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.horizontal-card {
+  background-color: #1d539f;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  width: 550 px;
+  text-align: center;
+}
+
+.horizontal-card p {
+  color:#fff;
+}

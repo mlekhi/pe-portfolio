@@ -78,11 +78,15 @@
 
     <div class="about">
       <h1>Work Experiences</h1>
-      <h3>
-        {% for para in work_text %}
-        <p>{{para}}</p>
-        {% endfor %}
-      </h3>
+      <div class="horizontal-card-container">
+        <h3>
+          {% for para in work_text %}
+          <div class="horizontal-card">
+            <p>{{para}}</p>
+          </div>
+          {% endfor %}
+        </h3>  
+      </div>
     </div>
 
     <div class="about">
